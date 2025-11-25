@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Bringthon University</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-solid" id="navbar">
+        <div class="container">
+            <div class="nav-content">
+                <div class="logo">
+                    <img src="images/logo.png" alt="Bringthon University">
+                    <span>BRINGTHON UNIVERSITY</span>
+                </div>
+                <ul class="nav-links" id="navLinks">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="programs.html">Programs</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html" class="active">Contact</a></li>
+                </ul>
+                <a href="apply.html">
+                    <button class="apply-btn">Apply Now</button>
+                </a>
+                <div class="hamburger" id="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Contact Hero -->
+    <section class="page-hero">
+        <div class="container">
+            <div class="page-hero-content">
+                <span class="section-label">Get in Touch</span>
+                <h1>Contact Us</h1>
+                <p>We're here to help. Reach out to us for admissions, inquiries, or any questions you may have.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Information Cards -->
+    <section class="contact-cards">
+        <div class="container">
+            <div class="contact-cards-grid">
+                <div class="contact-card">
+                    <div class="contact-card-icon">
+                        <i class="fas fa-map-marker-alt"></i>
+                    </div>
+                    <h3>Visit Us</h3>
+                    <p>Bringthon University Campus<br>
+                    Falmer, Brighton<br>
+                    East Sussex, BN1 9RH<br>
+                    United Kingdom</p>
+                </div>
+                <div class="contact-card">
+                    <div class="contact-card-icon">
+                        <i class="fas fa-phone"></i>
+                    </div>
+                    <h3>Call Us</h3>
+                    <p>Main Reception:<br>
+                    +44 20 7946 0958<br><br>
+                    Admissions Office:<br>
+                    +44 20 7946 0959</p>
+                </div>
+                <div class="contact-card">
+                    <div class="contact-card-icon">
+                        <i class="fas fa-envelope"></i>
+                    </div>
+                    <h3>Email Us</h3>
+                    <p>General Inquiries:<br>
+                    info@bringthon.ac.uk<br><br>
+                    Admissions:<br>
+                    admissions@bringthon.ac.uk</p>
+                </div>
+                <div class="contact-card">
+                    <div class="contact-card-icon">
+                        <i class="fas fa-clock"></i>
+                    </div>
+                    <h3>Office Hours</h3>
+                    <p>Monday - Friday:<br>
+                    9:00 AM - 5:00 PM<br><br>
+                    Saturday:<br>
+                    10:00 AM - 2:00 PM</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Form & Map -->
+    <section class="contact-main">
+        <div class="container">
+            <div class="contact-grid">
+                <div class="contact-form-section">
+                    <h2>Send Us a Message</h2>
+                    <p>Fill out the form below and we'll get back to you as soon as possible.</p>
+                    <form class="contact-form" id="contactForm">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="firstName">First Name *</label>
+                                <input type="text" id="firstName" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="lastName">Last Name *</label>
+                                <input type="text" id="lastName" required>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="email">Email Address *</label>
+                                <input type="email" id="email" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="phone">Phone Number</label>
+                                <input type="tel" id="phone">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="subject">Subject *</label>
+                            <select id="subject" required>
+                                <option value="">Select a subject</option>
+                                <option value="admissions">Admissions Inquiry</option>
+                                <option value="programs">Program Information</option>
+                                <option value="visit">Campus Visit</option>
+                                <option value="financial">Financial Aid</option>
+                                <option value="international">International Students</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message *</label>
+                            <textarea id="message" rows="6" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-large">Send Message</button>
+                    </form>
+                </div>
+                <div class="map-section">
+                    <h2>Find Us on the Map</h2>
+                    <div class="map-container">
+                        <iframe 
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2521.0822750873547!2d-0.08883908423053637!3d50.86455087953328!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x487585e5cffffff%3A0x9a84adfd5c553b!2sBrighton%2C%20UK!5e0!3m2!1sen!2s!4v1234567890123!5m2!1sen!2s" 
+                            width="100%" 
+                            height="450" 
+                            style="border:0;" 
+                            allowfullscreen="" 
+                            loading="lazy" 
+                            referrerpolicy="no-referrer-when-downgrade">
+                        </iframe>
+                    </div>
+                    <div class="map-info">
+                        <h4>Campus Directions</h4>
+                        <p><strong>By Train:</strong> Brighton Station is 15 minutes away by bus. Regular services run every 10 minutes.</p>
+                        <p><strong>By Car:</strong> Free parking available on campus. Enter via the main gate on Falmer Road.</p>
+                        <p><strong>By Bus:</strong> Routes 25, 28, and 29 stop directly at the university entrance.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Department Contacts -->
+    <section class="departments">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-label">Our Departments</span>
+                <h2>Department Contact Information</h2>
+                <p>Get in touch with specific departments for specialized assistance</p>
+            </div>
+            <div class="departments-grid">
+                <div class="dept-card">
+                    <i class="fas fa-user-graduate"></i>
+                    <h3>Admissions Office</h3>
+                    <p>Questions about applications, entry requirements, and enrollment</p>
+                    <a href="mailto:admissions@bringthon.ac.uk">admissions@bringthon.ac.uk</a>
+                    <a href="tel:+442079460959">+44 20 7946 0959</a>
+                </div>
+                <div class="dept-card">
+                    <i class="fas fa-graduation-cap"></i>
+                    <h3>Academic Registry</h3>
+                    <p>Current students, exam queries, and academic records</p>
+                    <a href="mailto:registry@bringthon.ac.uk">registry@bringthon.ac.uk</a>
+                    <a href="tel:+442079460960">+44 20 7946 0960</a>
+                </div>
+                <div class="dept-card">
+                    <i class="fas fa-globe"></i>
+                    <h3>International Office</h3>
+                    <p>Support for international students and visa information</p>
+                    <a href="mailto:international@bringthon.ac.uk">international@bringthon.ac.uk</a>
+                    <a href="tel:+442079460961">+44 20 7946 0961</a>
+                </div>
+                <div class="dept-card">
+                    <i class="fas fa-pound-sign"></i>
+                    <h3>Finance Office</h3>
+                    <p>Tuition fees, scholarships, and financial assistance</p>
+                    <a href="mailto:finance@bringthon.ac.uk">finance@bringthon.ac.uk</a>
+                    <a href="tel:+442079460962">+44 20 7946 0962</a>
+                </div>
+                <div class="dept-card">
+                    <i class="fas fa-briefcase"></i>
+                    <h3>Careers Service</h3>
+                    <p>Employment support, internships, and career guidance</p>
+                    <a href="mailto:careers@bringthon.ac.uk">careers@bringthon.ac.uk</a>
+                    <a href="tel:+442079460963">+44 20 7946 0963</a>
+                </div>
+                <div class="dept-card">
+                    <i class="fas fa-book"></i>
+                    <h3>Library Services</h3>
+                    <p>Library resources, research support, and study spaces</p>
+                    <a href="mailto:library@bringthon.ac.uk">library@bringthon.ac.uk</a>
+                    <a href="tel:+442079460964">+44 20 7946 0964</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="faq-section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-label">Common Questions</span>
+                <h2>Frequently Asked Questions</h2>
+                <p>Quick answers to common inquiries</p>
+            </div>
+            <div class="faq-grid">
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleFAQ(this)">
+                        <h4>How do I apply to Bringthon University?</h4>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>You can apply online through our admissions portal. Visit our Programs page, select your desired course, and click "Apply Now". You'll need to provide academic transcripts, personal statement, and references. Our admissions team is available to guide you through the process.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleFAQ(this)">
+                        <h4>What are the entry requirements?</h4>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Entry requirements vary by program. Generally, diploma programs require 3 A-levels or equivalent, higher diplomas need a relevant diploma or work experience, and top-up degrees require completion of a higher diploma or equivalent. International students need IELTS 6.0 or equivalent English proficiency.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleFAQ(this)">
+                        <h4>Are scholarships available?</h4>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Yes, we offer various scholarships based on academic merit, financial need, and specific criteria. Visit our Finance Office or email finance@bringthon.ac.uk for detailed information about available scholarships and application procedures.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleFAQ(this)">
+                        <h4>Can I visit the campus before applying?</h4>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Absolutely! We encourage prospective students to visit our campus. We offer guided tours, open days, and individual consultations. Contact us to schedule your visit or register for our next open day event.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleFAQ(this)">
+                        <h4>What support is available for international students?</h4>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Our International Office provides comprehensive support including visa assistance, airport pickup, accommodation help, orientation programs, and ongoing academic and pastoral support throughout your studies.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleFAQ(this)">
+                        <h4>What accommodation options are available?</h4>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>We offer on-campus halls of residence and can assist with finding private accommodation. On-campus options include single rooms, shared apartments, and studio flats, all within walking distance of academic buildings.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <div class="footer-logo">
+                        <img src="images/logo.png" alt="Bringthon University">
+                        <span>BRINGTHON UNIVERSITY</span>
+                    </div>
+                    <p>Empowering minds, transforming futures. Excellence in education since 1892.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="programs.html">Programs</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Programs</h4>
+                    <ul>
+                        <li><a href="programs.html">Diplomas</a></li>
+                        <li><a href="programs.html">Higher Diplomas</a></li>
+                        <li><a href="programs.html">Top-up Degrees</a></li>
+                        <li><a href="programs.html">Research</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Contact Info</h4>
+                    <ul class="contact-info">
+                        <li><i class="fas fa-map-marker-alt"></i> Brighton, United Kingdom</li>
+                        <li><i class="fas fa-phone"></i> +44 20 7946 0958</li>
+                        <li><i class="fas fa-envelope"></i> info@bringthon.ac.uk</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Bringthon University. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
